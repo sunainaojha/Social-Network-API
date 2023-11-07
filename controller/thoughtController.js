@@ -33,7 +33,7 @@ updateThought(req, res) {
         runValidators: true,
         new: true
     }).then((thought) => {
-        !thought ? res.status(404).json({message: 'No thought by ID'}) : res.json(thought);
+        !thought ? res.status(404).json({message: 'NO thought by ID'}) : res.json(thought);
 
     }).catch((err) => res.status(500).json(err));
 
